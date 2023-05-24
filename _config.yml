@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/Single-Cell-Core"
-url: "https://J-PTRson.github.io"
+baseurl: "Single-Cell-Core"
+url: "https://J-PTRson.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: TEST                                   # site's title
