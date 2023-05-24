@@ -8,7 +8,7 @@ tags: [Tips, scKaryo-seq, scChIC-seq]
 categories: Tutorial
 ---
 
-It's finally there, your sequencing data is back and your eager to dive in. However you quickly realize that your submitted 384 wells plate had cell groups distributed in columns but the well index is now labeled in rows.. How do you get your cell data out? Well, keep calm and please read on.
+It's finally there, your sequencing data is back and you're eager to dive in. However you quickly realize that your submitted 384 wells plate had cell groups distributed in columns but the well index is now labeled in rows.. How do you get your cell data out? Well, keep calm and please read on.
 
 ## Introduction
 
