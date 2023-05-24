@@ -186,5 +186,5 @@ plotHeterogeneity(selected.files)
 karyotypeMeasures(selected.files)
 ```
 
-{% include aligner.html images="tutorial/heatmap_example.png,tutorial/heterogeneity.png" column=2 %}
+{% include aligner.html images="tutorials/heatmap_example.png,tutorials/heterogeneity.png" column=2 %}
 
