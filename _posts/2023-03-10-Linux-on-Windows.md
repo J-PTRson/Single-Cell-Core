@@ -18,7 +18,7 @@ Many researchers will have started off learning their first analytical strategie
 
 If you have a computer running Windows 10 or later, then you might be surprised to know that it comes packed with a UNIX environment from the factory. This feature is however, buried in regions of your computer that you're unlikely to deal with unless your already a software developer. This system that you're looking for is called the [**Windows Subsystem for Linux**](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) (WSL 2).
 
-The easiest way to install a UNIX environment is to open the Microsoft Store app, search for Ubuntu and install that (yes really). ![image_appstore](%22%22)
+The easiest way to install a UNIX environment is to open the Microsoft Store app, search for Ubuntu and install that (yes really). {% include aligner.html images="tutorials/screenshot_of_app_store.png" %}
 
 The first time you open the app a dark window will appear, which is your [**bash**](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) terminal. You will be asked to set up a Ubuntu username and password. These don't need to be the same as your Windows username and password, and you might want to write these down somewhere safe, so that you won't forget.
 
