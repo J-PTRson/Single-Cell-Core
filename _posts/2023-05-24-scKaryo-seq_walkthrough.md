@@ -5,6 +5,7 @@ tags: [scKaryo-seq Markdown]
 categories: Tutorial
 ---
 
+Are you looking for information on how to examine your scKaryo-seq data? This post will introduce you to the basics of scKaryo-seq analysis, enjoy! 
 
 ## Goal
 
@@ -18,7 +19,7 @@ The sequencing data in this walk through are derived K562 myelogeneous leukemia 
 
 This walk through will focus on using the [**Aneufinder**](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0971-7) R-package for data visualization. As such it is required to have [**R**](https://cran.rstudio.com/) and [**R-studio**](https://posit.co/download/rstudio-desktop/) as well as the necessary libraries installed.
 
-``` {{r}}
+```r
 if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
@@ -40,14 +41,14 @@ When performing single cell sequencing analysis there is a very good chance that
 
 Start a new Rscript and load the libraries that we will be using throughout this tutorial.
 
-``` {{r}}
+```r
 library(AneuFinder)
 library(BSgenome.Hsapiens.NCBI.GRCh38)
 ```
 
 Set the working directory of your Rscript to that of your analysis directory and initialize the following variables.
 
-``` {{r}}
+```r
 ######### Setup ##############
 
 setwd("D:/Analysis") # something like that
@@ -66,7 +67,7 @@ chrom <- c(1:22,"X","Y")
 
 There are a number of manners to distinguish good from bad cells. In our example we will set a initial threshold criteria for the amount of unique reads that a single cell must meet. To accomplish this we'll use a few functions.
 
-``` {{r}}
+```r
 #### get bad cells function ####
 getbad <- function(nl, min_thr, max_thr){
   cell_list <- list()
@@ -88,7 +89,7 @@ my.file.move <- function(from, to) {
 
 Set the criteria for the threshold.
 
-``` {{r}}
+```r
 ######### Cell selection ###########
 total_reads <- colSums(count_table[4:ncol(count_table)], na.rm = T, dims = 1)
 
@@ -103,7 +104,7 @@ max_cutoff <- 90000
 
 To evaluate our selection criteria it can be useful to visualize this in a histogram.
 
-``` {{r}}
+```r
 #inspect the read count distribution histogram 
 png("./cell_distribution.png", width=800, height=800, res=100)
 hist(total_reads)
@@ -117,7 +118,7 @@ dev.off()
 
 Once we are satisfied with our threshold, we will create a list of "undesired" cells and exclude that data from our input folder. We will then analyze the remainder of the cells.
 
-``` {{r}}
+```r
 #create a list of bad cells
 bad_cells <- getbad(total_reads, min_cutoff, max_cutoff)
 bad_cells <- gsub("\\.","-", bad_cells)
@@ -142,7 +143,7 @@ AneuFinder is a tool developed by Aaron Taudt to aid researchers with copy-numbe
 
 Run Aneufinder
 
-``` {{r}}
+```r
 ref_bins <- "./sorted_simulated.bam"
 Aneufinder(inputfolder = input_folder, outputfolder = output_folder, numCPU = 2,  pairedEndReads = F, binsizes = 1e+06, variable.width.reference = ref_bins, hotspot.pval = NULL, chromosomes = chrom, correction.method = 'GC', GC.BSgenome = host_genome, method='edivisive', cluster.plot = F)
 ```
@@ -151,7 +152,7 @@ Aneufinder(inputfolder = input_folder, outputfolder = output_folder, numCPU = 2,
 
 Once Aneufinder finished its run the outputs will be saved in the output folder. Although we initially excluded some bad cells solely based on unique read counts, we can now use the tools in Aneufinder to further examine our sample. Using clusterByQuality we are able to distinguish a number of clusters using our quality metrics.
 
-``` {{r}}
+```r
 ## Get the results 
 r_output <- paste0(output_folder, "/MODELS/method-edivisive")
 files <- list.files(r_output, full.names=TRUE)
@@ -168,13 +169,13 @@ For more information on the quality metrics, you may read more about them [**her
 
 To further inspect our clusters we can produce a pdf with a heatmap for each of the clusters.
 
-``` {{r}}
+```r
 heatmapGenomewideClusters(cl, file = "./genome_heatmap_all.pdf")
 ```
 
 For our goal we set out to visualize the tumor heterogeneity within our sample. So now we can select a cluster of interest and examine that in more detail.
 
-``` {{r}}
+```r
 ## Select the best cluster and plot it separately
 selected.files <- unlist(cl$classification[1]) 
 heatmapGenomewide(selected.files, file="./heatmap_cl1.pdf")
