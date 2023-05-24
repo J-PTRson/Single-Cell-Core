@@ -1,7 +1,7 @@
 ---
 layout: post
 title: scKaryo-seq walk through
-author: Joshua
+author: jpeterson
 feature-img: "assets/img/feature-img/heatmap_header.jpeg"
 thumbnail: "assets/img/thumbnails/feature-img/heatmap_thumbnail.jpeg"
 tags: [scKaryo-seq Markdown]
