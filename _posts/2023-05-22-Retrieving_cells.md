@@ -2,9 +2,9 @@
 layout: post
 title: Retrieving your cells
 author: jpeterson
-feature-img: ""
-thumbnail: ""
-tags: [Data tips]
+feature-img: "assets/img/feature-img/384-well_plate_heart.jpeg"
+thumbnail: "assets/img/thumbnails/feature-img/384-well_plate_heart.jpeg"
+tags: [Tips, scKaryo-seq, scChIC-seq]
 categories: Tutorial
 ---
 
