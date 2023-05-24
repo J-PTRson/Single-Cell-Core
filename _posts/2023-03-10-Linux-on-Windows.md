@@ -6,7 +6,7 @@ tags: [Desktop Drama]
 categories: Tutorial
 ---
 
-Many sequencing analysis tools can work within a Windows operating system just fine, however, sometimes, at some point, you might find that the best tool for the job was designed to solely work in a unix environment. What now? Well did you know there can be a Linux within your Windows?
+Many sequencing analysis tools can work within a Windows operating system just fine, however, sometimes, at some point, you might find that the best tool for the job was designed to solely work in a unix environment. What now? Well, did you know there can be a Linux within your Windows?
 
 ## Introduction
 
