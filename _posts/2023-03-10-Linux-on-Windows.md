@@ -2,8 +2,6 @@
 layout: post
 title: Setting up your Linux environment within Windows
 author: jpeterson
-feature-img: ""
-thumbnail: ""
 tags: [Desktop Drama]
 categories: Tutorial
 ---
