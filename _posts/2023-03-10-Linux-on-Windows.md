@@ -16,11 +16,21 @@ Many researchers will have started off learning their first analytical strategie
 
 If you have a computer running Windows 10 or later, then you might be surprised to know that it comes packed with a UNIX environment from the factory. This feature is however, buried in regions of your computer that you're unlikely to deal with unless your already a software developer. This system that you're looking for is called the [**Windows Subsystem for Linux**](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) (WSL 2).
 
-The easiest way to install a UNIX environment is to open the Microsoft Store app, search for Ubuntu and install that (yes really). {% include aligner.html images="tutorials/screenshot_of_app_store.png" %}
+Open the command prompt terminal app and install the WSL along with the Ubuntu Linux distro.
 
-The first time you open the app a dark window will appear, which is your [**bash**](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) terminal. You will be asked to set up a Ubuntu username and password. These don't need to be the same as your Windows username and password, and you might want to write these down somewhere safe, so that you won't forget.
+```cmd
+wsl.exe --install -d ubuntu
+```
+If installation was successful you will see a message asking you to reboot your system.
+{% include aligner.html images="tutorials/Screenshot_installation.png" %}
 
-Once this has been set up you are free to use this terminal for all your Unix needs. To test out your freshly minted linux environment it might be good to try and update your system.
+Once you will have rebooted a terminal window will open and you will continue to install and evantually ask you to set up a Ubuntu username and password. These don't need to be the same as your Windows username and password, and you might want to write these down somewhere safe, so that you won't forget.
+
+{% include aligner.html images="tutorials/Screenshot_reboot.png" %}
+
+You will now be able to launch your [**bash**](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) terminal from the ubuntu app in your start menu and you are free to use this terminal for all your Unix needs. To test out your freshly minted linux environment it might be good to try and update your system.
+
+
 
 Check which repositories have updates ready by running.
 
