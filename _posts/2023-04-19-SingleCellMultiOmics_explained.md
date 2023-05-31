@@ -3,7 +3,7 @@ layout: post
 title: Getting up to speed with SingleCellMultiOmics  
 author: jpeterson
 feature-img: "assets/img/feature-img/Buys.jpeg"
-thumbnail: "assets/img/thumbnails/feature-img/Buys.jpeg"
+thumbnail: "assets/img/thumbnails/feature-img/Multiomics.jpeg"
 tags: [Desktop Drama]
 categories: Tutorial
 ---
