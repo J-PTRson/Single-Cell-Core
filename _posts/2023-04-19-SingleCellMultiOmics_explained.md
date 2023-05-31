@@ -12,7 +12,7 @@ Within the [**single cell core**](https://www.singlecellcore.eu/) your raw seque
 
 ## Introduction
 
-The [**SingleCellMultiOmics**](https://github.com/BuysDB/SingleCellMultiOmics/tree/master) (ScMO) package has been developed within the Alexander van Oudenaarden lab by [**Buys de Barbanson**](https://github.com/BuysDB) during his doctoral research. The tools in ScMO are written mostly in the [**python**](https://www.python.org/) programming language and installation will require a working python environment. However, to get the most out of this package I would recommend to install the package within a UNIX environment (Macbook/Linux). In case you only have access to a Windows computer, you can follow our other **post** on how to set up a Linux environment within Windows. This walk through will assume that you are able to work from a bash terminal in Ubuntu.
+The [**SingleCellMultiOmics**](https://github.com/BuysDB/SingleCellMultiOmics/tree/master) (ScMO) package has been developed within the Alexander van Oudenaarden lab by [**Buys de Barbanson**](https://github.com/BuysDB) during his doctoral research. The tools in ScMO are written mostly in the [**python**](https://www.python.org/) programming language and installation will require a working python environment. However, to get the most out of this package I would recommend to install the package within a UNIX environment (Macbook/Linux). In case you only have access to a Windows computer, you can follow our other [**post**](https://j-ptrson.github.io/Single-Cell-Core/tutorial/2023/03/10/Linux-on-Windows.html) on how to set up a Linux environment within Windows. This walk through will assume that you are able to work from a bash terminal in Ubuntu.
 
 ## Installation
 
