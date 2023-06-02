@@ -61,7 +61,7 @@ pip install singlecellmultiomics
 
 If all goes well, the singlecellmultiomics package will install on your computer. There is however a chance that you will see a number of warnings regarding the installation location that will have to be addressed.
 
-{% include aligner.html images="tutorials/Screenshot_warning.png" %}
+{% include aligner.html images="tutorials/Screenshot_warnings.png" %}
 
 To fix this open the "hidden" bashrc file again and add the line export path (with your user name) to the document.
 
