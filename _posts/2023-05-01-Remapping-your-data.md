@@ -12,7 +12,7 @@ With all the information available about genome sequencing one could easily be f
 
 Although our current knowledge base about the intricacies of human genetics have been steadily increasing over the years since the initial release of the [**human reference genome**](https://www.nature.com/articles/35057062) in the early 2000's. Last year the research efforts of the Telomere-to-Telomere (T2T) consortium payed off with their publication of the [**complete sequence of a human genome**](https://www.science.org/doi/10.1126/science.abj6987). Here we will show our methods to remap your single cell sequencing data using the tools within the [**SingleCellMultiOmics**](https://github.com/BuysDB/SingleCellMultiOmics/tree/master) collection made by the Alexander van Oudenaarden Lab.
 
-Curious to explore the utility of the SingleCellMultiomics collection? See our previous **blog** to get you set up!
+Curious to explore the utility of the SingleCellMultiomics collection? See our previous [**blog**](https://j-ptrson.github.io/Single-Cell-Core/tutorial/2023/04/19/SingleCellMultiOmics_explained.html) to get you set up!
 
 ## Prerequisites
 
